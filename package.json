@@ -1,0 +1,30 @@
+{
+  "name": "fiber-cli",
+  "version": "0.0.1",
+  "description": "A collection of configuration files containing prettier, eslint, stylelint ...",
+  "author": "Saszr",
+  "license": "MIT",
+  "type": "module",
+  "scripts": {
+    "build": "rimraf ./dist && copyfiles -a -u 1 src/* dist"
+  },
+  "main": "dist/index.js",
+  "bin": {
+    "fiber-cli": "bin/cli.js"
+  },
+  "dependencies": {
+    "chalk": "^5.0.0",
+    "commander": "^8.3.0",
+    "fs-extra": "^10.0.0",
+    "log-symbols": "^5.1.0",
+    "mem-fs": "^2.2.1",
+    "mem-fs-editor": "^9.3.0"
+  },
+  "devDependencies": {
+    "copyfiles": "^2.4.1",
+    "cross-env": "^7.0.3",
+    "prettier": "^2.5.1",
+    "rimraf": "^3.0.2",
+    "rollup": "^2.61.0"
+  }
+}
