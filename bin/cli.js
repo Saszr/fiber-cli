@@ -1,11 +1,9 @@
-#!/usr/bin/env node --experimental-modules
+#!/usr/bin/env node
 
-import fs from 'fs';
-import program from 'commander';
+const { version } = require('../package');
+const program = require('commander');
 
-import { cloneRules } from '../lib/index.js';
-
-const { version } = JSON.parse(fs.readFileSync('package.json', 'utf8'));
+const { cloneRules } = require('../lib');
 
 program.version(version, '-v, --version', 'cli version').helpOption('-h, --help', 'show help info');
 

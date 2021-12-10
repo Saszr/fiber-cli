@@ -1,3 +1,3 @@
-import prettier from './prettierrc.cjs';
+const prettier = require('./prettierrc');
 
-export { prettier };
+module.exports = { prettier };
