@@ -1,5 +1,5 @@
 {
-  "name": "fiber-cli",
+  "name": "fiber-lint",
   "version": "0.0.4",
   "description": "A collection of configuration files containing prettier, eslint, stylelint ...",
   "author": "Saszr",
@@ -9,7 +9,7 @@
   },
   "main": "dist/index.js",
   "bin": {
-    "fiber-cli": "bin/cli.js"
+    "fiber-lint": "bin/cli.js"
   },
   "dependencies": {
     "@babel/core": "^7.16.5",
