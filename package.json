@@ -1,6 +1,6 @@
 {
   "name": "fiber-lint",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "A collection of configuration files containing prettier, eslint, stylelint ...",
   "author": "Saszr",
   "license": "MIT",
