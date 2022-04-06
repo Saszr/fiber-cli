@@ -1,11 +1,12 @@
 {
   "name": "fiber-lint",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "description": "A collection of configuration files containing prettier, eslint, stylelint ...",
   "author": "Saszr",
   "license": "MIT",
   "scripts": {
-    "build": "rimraf ./dist && copyfiles -a -u 1 src/* dist"
+    "build": "rimraf ./dist && copyfiles -a -u 1 src/* dist",
+    "release": "npm run build && npm publish"
   },
   "main": "dist/index.js",
   "bin": {
