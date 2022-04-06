@@ -1,5 +1,5 @@
 const prettier = require('./prettierrc');
 const stylelint = require('./stylelintrc');
-const eslint = require('./eslintrc');
+const eslintConfig = require('./eslintrc');
 
-module.exports = { prettier, eslint, stylelint };
+module.exports = { prettier, eslintConfig, stylelint };

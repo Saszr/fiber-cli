@@ -13,6 +13,55 @@
 npm i fiber-lint --save-dev
 ```
 
+in `.eslintrc.js`
+
+> [eslint 配置在 monorepo 仓库下的 fix](https://github.com/umijs/fabric/issues/108#issuecomment-1085071151)
+
+```js
+const fiberLint = require('fiber-lint');
+
+module.exports = {
+  ...fiberLint.eslintConfig(__dirname),
+  rules: {
+    // your rules
+  },
+};
+```
+
+in `.stylelintrc.js`
+
+```js
+const fiberLint = require('fiber-lint');
+
+module.exports = {
+  ...fiberLint.stylelint,
+  rules: {
+    // your rules
+  },
+};
+```
+
+or
+
+```js
+module.exports = {
+  extends: [require.resolve('fiber-lint/dist/stylelintrc')],
+  rules: {
+    // your rules
+  },
+};
+```
+
+in `.prettierrc.js`
+
+```js
+const fiberLint = require('fiber-lint');
+
+module.exports = {
+  ...fiberLint.prettier,
+};
+```
+
 ## Co-construction
 
 - 公告 / 讨论 / 建议 ==> [Discussions](https://github.com/Saszr/fiber-lint/discussions)

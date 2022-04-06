@@ -1,9 +1,9 @@
 #!/usr/bin/env node
 
-const { version } = require('../package');
+const { version } = require('./package');
 const program = require('commander');
 
-const { cloneRules, cloneOtherRules } = require('../lib');
+const { cloneRules, cloneOtherRules } = require('./lib');
 
 program.version(version, '-v, --version', 'cli version').helpOption('-h, --help', 'show help info');
 
