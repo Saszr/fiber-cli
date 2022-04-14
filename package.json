@@ -1,6 +1,6 @@
 {
   "name": "fiber-lint",
-  "version": "0.0.7",
+  "version": "0.0.8",
   "description": "A collection of configuration files containing prettier, eslint, stylelint ...",
   "author": "Saszr",
   "license": "MIT",
@@ -37,6 +37,8 @@
     "log-symbols": "^4.1.0",
     "mem-fs": "^2.2.1",
     "mem-fs-editor": "^9.3.0",
+    "prettier": "^2.6.2",
+    "prettier-plugin-two-style-order": "^1.0.1",
     "stylelint": "^14.1.0",
     "stylelint-config-css-modules": "^2.3.0",
     "stylelint-config-prettier": "^9.0.3",
@@ -47,8 +49,6 @@
   "devDependencies": {
     "copyfiles": "^2.4.1",
     "cross-env": "^7.0.3",
-    "prettier": "^2.5.1",
-    "rimraf": "^3.0.2",
-    "rollup": "^2.61.0"
+    "rimraf": "^3.0.2"
   }
 }
